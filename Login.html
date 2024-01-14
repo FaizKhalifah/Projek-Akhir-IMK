@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter&family=Quicksand:wght@400;500;700&family=Roboto&display=swap');
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: inter;
+    }
+
+    body{
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+
+    body div{
+        width: 50%;
+        height: 300px;
+        text-align: center;
+        margin: 10px;
+    }
+
+    .login input{
+        margin: 1.03rem;
+    }
+
+    button{
+        padding: 10px;
+        margin-top: 20px;
+        width: 150px;
+        border: none;
+        border-radius: 50px;
+        color: white;
+        background-color: rgb(20, 20, 241);
+        box-shadow: 1px 1px 2px 1px;
+        transition: 0.2s;
+    }
+
+   button:hover{
+        background-color: white;
+        color: rgb(20, 20, 241);
+        border: 1px blue solid;
+        box-shadow: none;
+    }
+
+    input[type=text], input[type=password]{
+        width: 250px;
+        height: 50px;
+        border-radius: 20px;
+        padding: 20px;
+        background-color: aqua;
+        border: none;
+        box-shadow: 2px 1px 5px;
+    }
+
+    .facebook, .google, .apple{
+        width: 350px;
+        border-radius: 10px;
+    }
+
+    .facebook{
+        background-color: #3d5a98;
+    }
+
+    .facebook:hover{
+        border: 1px #3d5a98 solid;
+    }
+
+    .google{  
+        color: black;
+        box-shadow: none;
+        background-color: #dadada;
+    } 
+
+    .google:hover{
+        background-color: white;
+        color:black ;
+        border: 1px #dadada solid;
+    }
+
+    .apple{
+        color: white;
+        background-color: black;
+    }
+
+    .apple:hover{
+        background-color: white;
+        color: black;
+        border: 1px black solid;
+    }
+
+    @media screen and (max-width: 1200px) {
+        main{
+            flex-flow:column nowrap;
+        }
+    
+        main aside{
+            align-self:center;
+        }
+
+        .duration{
+            align-self: stretch;
+        }
+    }
+    
+    @media screen and (max-width: 768px) {
+
+        main{
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            align-items: center;
+            justify-content: start;
+            align-content: center;
+            gap: 2rem;
+            width: 100%;
+
+        }
+
+        nav ul {
+            justify-content: stretch;
+          }
+
+        }
+</style>
+<body>
+    <div class="login">
+    <h1>Login</h1>
+    <form action="">
+        <input type="text" placeholder="Username"><br>
+        <input type="password" placeholder="Password"><br>
+        <a href="Forgot.html">Forgot password?</a><br>
+    </form>
+    <a href="main.html"><button>Log in</button></a>
+    </div>
+    <div class="signIn">
+        <p>Dont' have an account? Sign in</p>
+        <a href="SignIn.html"><button>Sign in</button></a>
+    </div>
+    <div class="otherLogin">
+    <p>-or-</p>
+    <a href="main.html"><button class="facebook">Login with facebook</button></a><br>
+    <a href="main.html"><button class="google">Login with google</button></a><br>
+    <a href="main.html"><button class="apple">Login with apple</button></a>
+    </div>
+</body>
+</html>

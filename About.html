@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter&family=Quicksand:wght@400;500;700&family=Roboto&display=swap');
+        
+    *{
+        margin:0px;
+        padding:0px;
+        font-family: 'inter';
+        box-sizing: border-box;
+    }
+    
+    nav{
+        background-color: #437C90;
+        height: 50px;
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    nav ul{
+        display:flex;
+        width: 90%;
+        height: 90%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    nav li{
+        list-style: none;
+        
+    }
+    
+    nav a{
+        text-decoration: none;
+        color: white;
+        transition: 0.3s;
+        padding: 10px 15px;
+        border-radius: 30px;
+    }
+    
+    nav li :hover{
+        background-color: white;
+        color: #437C90;
+    }
+    
+    main{
+        font-style: italic;
+        font-weight: bold;
+        background-color: #2E97C5;
+        height: 650px;
+    }
+    .deskripsi{
+        padding: 100px;
+        width: 650px;
+        color: white;
+    }
+
+
+    footer{
+        background-color: black;
+        position: relative;
+        width: 100%;
+        bottom: 0px;
+        height: 50px;
+        padding: 10px;
+        color: white;
+    }
+
+    @media screen and (max-width: 768px) {
+
+        main{
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            align-items: center;
+            justify-content: start;
+            align-content: center;
+            gap: 2rem;
+            width: 100%;
+
+        }
+
+        nav ul {
+            justify-content: stretch;
+          }
+        }
+
+</style>
+
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="/main.html">Home</a></li>
+            <li><a href="/Exercise.html">Exercices</a></li>
+            <li><a href="/Article.html">Article</a></li>
+            <li><a href="/About.html">About us</a></li>
+        </ul>
+    </nav>
+    <main>
+    <div class="deskripsi">
+        <p>About Us</p><br><br>
+        <p>
+        We are a team committed to innovative solutions for sports and health tracking. 
+        With advanced technology, we assist you in achieving a healthy and active lifestyle. 
+        Our products provide accurate information about your activities, sleep, nutrition, and more. With customizable features, 
+        we support you on your journey towards optimal health and fitness. Join us in the mission of living healthier, moving more, 
+        and reaching your full potential. Thank you for choosing us as your partner.
+        </p>
+    </div> 
+    </main>
+    <footer>
+        <p>Healthyinsidefreshoutside.com</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter&family=Quicksand:wght@400;500;700&family=Roboto&display=swap');
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+            font-family: 'inter';
+        }
+
+        body, html{
+            display: flex;
+            flex-direction: row;
+            height: 100%;
+            width: 100%;
+        }
+
+        .blank{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            justify-items: center;
+            align-items: center;
+            align-content: center;
+            background-color: #437C90;
+            color: white;
+            width:35% ;
+        }
+
+        .main{
+            color: black;
+            width: 65%;
+            text-align: center;
+        }
+
+        input[type="text"], input[type="password"], input[type="email"], input[type="submit"]{
+            background-color: #10F4FC;
+            border-radius: 20px;
+            padding: 10px;
+            margin: 20px;
+            height: 50px;
+            border: none;
+            box-shadow: 2px 2px 5px ;
+        }
+
+        input[type="password"], input[type="email"]{
+            width: 445px;
+        }
+
+        input[type="submit"]{
+            width: 250px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        input[type="submit"]:hover{
+            border: 1px aqua solid;
+            background-color: white;
+            color: aqua;
+        }
+
+        main{
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            align-items: center;
+            justify-content: start;
+            align-content: center;
+            gap: 2rem;
+            width: 100%;
+    
+        }
+    
+        nav ul {
+            justify-content: stretch;
+          }
+    </style>
+</head>
+<body>
+    <div class="blank">
+        <h1>Healthy inside</h1><br>
+            <h1>fresh outside</h1>
+    </div>
+    <div class="main">
+        <h1>sign in</h1>
+        <form action="">
+            <input type="text" placeholder="First name">
+            <input type="text" placeholder="last name">
+            <br>
+            <input type="email" placeholder="E-mail"><br>
+            <input type="password" placeholder="Password"><br>
+            <input type="text" placeholder="height">
+            <input type="text" placeholder="weight"><br>
+            <label for="">Blood Type</label><br><br>
+            <input type="radio"><label for=""> A </label>
+            <input type="radio"><label for=""> B </label>
+            <input type="radio"><label for=""> AB </label>
+            <input type="radio"><label for=""> O </label><br>
+            <input type="text" placeholder="Sugar level">
+            <input type="text" placeholder="Colestrol level"><br>
+            <input type="Submit">
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot password</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter&family=Quicksand:wght@400;500;700&family=Roboto&display=swap');
+        *{
+            box-sizing: border-box;
+            font-family: 'inter';
+        }
+        body, html{
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container{
+            text-align: center;
+        }
+
+        .main{
+            width: 450px;
+            border: 1px black solid; 
+            border-radius: 20px;
+        }
+
+        .main h3{
+            color: #515151;
+            text-align: left;
+            margin-left: 50px;
+            margin-bottom: 20px;
+        }
+
+        .main hr{
+            width: 350px;
+        }
+
+        .message{
+            background-color: #9AE0AA;
+            color: #0F7F1A;
+            text-align: left;
+            margin-left: 50px;
+            width: 350px;
+           
+        }
+        .main form{
+            margin-top: 10px;
+            text-align: left;
+            padding: 10px 0px 20px 50px;
+        }
+
+        input[type=email]{
+            width: 250px;
+            padding: 10px 3px;
+            border-radius: 10px;
+            border: 1px gray solid;
+        }
+
+        button{
+            margin:20px 0px 30px 0px;
+            background-color: #4265DF;
+            border-radius: 10px;
+            padding: 10px;
+            color: white;
+            border: none;
+            transition: 0.3s;
+            border:1px #4265DF solid;
+        }
+
+        button:hover{
+            background-color: white;
+            color: #4265DF;
+        }
+
+        main{
+            display: flex;
+            flex-direction: column;
+            justify-items: center;
+            align-items: center;
+            justify-content: start;
+            align-content: center;
+            gap: 2rem;
+            width: 100%;
+    
+        }
+    
+        nav ul {
+            justify-content: stretch;
+          }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="main">
+        <h3>Reset password</h3>
+        <hr>
+        <div class="message" hidden>
+            <p>We have e-mailed your password reset link</p>
+        </div>
+        <form action="">
+            <label for="">E-mail address</label>
+            <input type="email">
+        </form>
+        <button class="sendPassword" onclick="sent()">Send password link</button>
+            <br>
+    </div>
+</div>
+
+<script>
+    function sent(){
+        var pesan = document.querySelector('.message');
+        pesan.removeAttribute('hidden');
+    }
+
+    
+</script>
+</body>
+</html>
